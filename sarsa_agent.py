@@ -1,6 +1,5 @@
 import numpy as np
 
-
 class SARSA:
 
     def __init__(
@@ -20,7 +19,7 @@ class SARSA:
         self.gamma = gamma
         self.epsilon = epsilon
         self.epsilon_decay = epsilon_decay
-        self.epsilon_min = self.epsilon_min
+        self.epsilon_min = epsilon_min
         self.q_table = np.zeros((state_size, action_size))
 
     # Exploration-exploitation hyperparameter
